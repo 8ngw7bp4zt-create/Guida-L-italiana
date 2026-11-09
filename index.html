@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guida Italiana｜意大利语导游面试背诵本</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f5f0;
+  color: #333;
+}
+header {
+  background: #176b4d;
+  color: white;
+  padding: 35px 20px;
+  text-align: center;
+}
+header h1 { margin: 0 0 10px; }
+header p { margin: 0; }
+main {
+  max-width: 750px;
+  margin: 25px auto;
+  padding: 0 16px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin: 14px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #00000010;
+}
+.card h2 { margin-top: 0; color: #176b4d; }
+button {
+  background: #176b4d;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:disabled {
+  background: #aaa;
+}
+.content {
+  display: none;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #888;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Guida Italiana</h1>
+  <p>意大利语导游面试背诵本</p>
+  <p>一步一步，把答案变成自己的语言。</p>
+</header>
+
+<main>
+
+<div class="card">
+<h2>01｜词库</h2>
+<p>按功能和情境分类，积累导游面试高频词汇。</p>
+<button onclick="show('vocab')">进入学习</button>
+<div class="content" id="vocab">词库内容即将整理，敬请期待。</div>
+</div>
+
+<div class="card">
+<h2>02｜答题模板</h2>
+<p>掌握不同题型的意大利语回答框架。</p>
+<button onclick="show('templates')">进入学习</button>
+<div class="content" id="templates">答题模板即将整理。</div>
+</div>
+
+<div class="card">
+<h2>03｜28个积木句</h2>
+<p>学习可以反复组合使用的实用意大利语句子。</p>
+<button onclick="show('blocks')">进入学习</button>
+<div class="content" id="blocks">28个积木句即将整理。</div>
+</div>
+
+<div class="card">
+<h2>04｜导游规范知识问答</h2>
+<p>60道题目。</p>
+<button onclick="show('rules')">进入学习</button>
+<div class="content" id="rules">导游规范知识问答即将整理。</div>
+</div>
+
+<div class="card">
+<h2>05｜应变能力知识问答</h2>
+<p>60道题目。</p>
+<button onclick="show('emergency')">进入学习</button>
+<div class="content" id="emergency">应变能力知识问答即将整理。</div>
+</div>
+
+<div class="card">
+<h2>06｜综合知识问答</h2>
+<p>80道题目。</p>
+<button onclick="show('general')">进入学习</button>
+<div class="content" id="general">综合知识问答即将整理。</div>
+</div>
+
+<div class="card">
+<h2>07｜自测模式</h2>
+<p>根据中文关键词练习口头表达。</p>
+<button disabled>暂未开放</button>
+</div>
+
+<div class="card">
+<h2>08｜随机抽题</h2>
+<p>随机抽取题目，模拟面试。</p>
+<button disabled>暂未开放</button>
+</div>
+
+</main>
+
+<footer>Guida Italiana · 意大利语导游面试备考</footer>
+
+<script>
+function show(id) {
+  const box = document.getElementById(id);
+  box.style.display =
+    box.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
